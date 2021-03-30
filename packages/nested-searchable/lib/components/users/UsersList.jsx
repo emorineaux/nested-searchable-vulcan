@@ -35,6 +35,17 @@ const UsersList = ({ results = [], currentUser, loading, loadMore, count, totalC
             <Components.AccountsLoginForm />
         </div>
 
+        {/* Change Filtering Query to search through User and Address property */}
+        {/*<Components.Datatable*/}
+        {/*    collection={Users}*/}
+        {/*    columns={[*/}
+        {/*        'username',*/}
+        {/*        'email',*/}
+        {/*    ]}*/}
+        {/*    options={{ input: { sort: { username: 'asc' } } }}*/}
+        {/*/>*/}
+
+        {/* Custom Search input to search in User and Address property */}
         {loading ? (
             <Components.Loading />
         ) : (

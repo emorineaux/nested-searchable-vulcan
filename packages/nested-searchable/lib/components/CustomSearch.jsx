@@ -4,8 +4,11 @@ import gql from 'graphql-tag';
 
 const query = gql`
     query FindUser($search: String!) {
-        User(search: $search) {
-            username
+        user(input: { search: $search }) {
+            results{
+                _id
+                username
+            }
         }
     }
 `;
